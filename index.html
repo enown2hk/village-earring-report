@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>村支书耳环事件舆情分析报告</title>
+    <meta
+      name="description"
+      content="村支书耳环事件网络舆情分析报告，包含趋势、热搜、情绪、媒体、传播链路与观点复盘。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="返回顶部">
+        <span class="brand-mark">档</span>
+        <span>舆情档案</span>
+      </a>
+      <nav class="nav-links" aria-label="报告章节">
+        <a href="#timeline">时间线</a>
+        <a href="#trend">走势</a>
+        <a href="#sentiment">情绪</a>
+        <a href="#media">媒体</a>
+        <a href="#spread">传播</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="cover shell">
+        <div class="cover-copy">
+          <p class="eyebrow">PUBLIC OPINION DOSSIER / 2026</p>
+          <h1 id="reportTitle">村支书耳环事件舆情分析报告</h1>
+          <p class="lead" id="reportSubtitle">
+            从抗洪救灾叙事到“金耳环”争议，观察网络情绪如何聚集、转向与被治理。
+          </p>
+          <div class="meta-row">
+            <span id="reportPeriod">2026.05.20 00:00 - 2026.06.20 00:00</span>
+            <span id="reportSource">源自舆情报告及明细表</span>
+          </div>
+        </div>
+
+        <aside class="evidence-wall" aria-label="报告证据图">
+          <figure class="evidence-frame wide">
+            <img src="assets/hero-wordcloud.png" alt="村支书耳环事件关键词词云" />
+            <figcaption>关键词热度</figcaption>
+          </figure>
+          <figure class="evidence-frame">
+            <img src="assets/trend-preview.png" alt="舆情发展趋势图" />
+            <figcaption>发展曲线</figcaption>
+          </figure>
+          <figure class="evidence-frame">
+            <img src="assets/media-donut.png" alt="媒体类型分布图" />
+            <figcaption>媒体结构</figcaption>
+          </figure>
+        </aside>
+      </section>
+
+      <section class="ticker shell" aria-label="核心数据">
+        <div class="ticker-item">
+          <span>全网声量</span>
+          <strong id="metricTotal">52,521</strong>
+        </div>
+        <div class="ticker-item">
+          <span>峰值日期</span>
+          <strong id="metricPeak">05.26</strong>
+        </div>
+        <div class="ticker-item">
+          <span>热搜数量</span>
+          <strong id="metricHot">45</strong>
+        </div>
+        <div class="ticker-item">
+          <span>评论量</span>
+          <strong id="metricComments">7,702</strong>
+        </div>
+      </section>
+
+      <section class="brief shell">
+        <div class="section-kicker">EXECUTIVE BRIEF</div>
+        <div class="brief-grid">
+          <article class="brief-copy">
+            <h2>从一个饰品细节，到一场公共讨论</h2>
+            <div id="overviewList" class="overview-list"></div>
+          </article>
+          <div id="insightGrid" class="insight-grid"></div>
+        </div>
+      </section>
+
+      <section id="timeline" class="section shell">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">CASE FILE 01</p>
+            <h2>事件脉络</h2>
+          </div>
+          <span class="section-note">从灾情、出镜、回应到网暴查处</span>
+        </div>
+        <div id="timelineList" class="timeline"></div>
+      </section>
+
+      <section id="trend" class="section shell">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">CASE FILE 02</p>
+            <h2>声量走势</h2>
+          </div>
+          <span class="section-note">5月26日与6月2日形成双峰</span>
+        </div>
+        <div class="analysis-grid two">
+          <article class="panel chart-panel">
+            <div class="panel-head">
+              <span>全网日声量</span>
+              <i data-lucide="activity"></i>
+            </div>
+            <div id="trendChart" class="chart large"></div>
+          </article>
+          <article class="panel chart-panel">
+            <div class="panel-head">
+              <span>主要渠道堆叠</span>
+              <i data-lucide="layers-3"></i>
+            </div>
+            <div id="mediaStackChart" class="chart large"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shell">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">CASE FILE 03</p>
+            <h2>热搜档案</h2>
+          </div>
+          <span class="section-note">平台榜单推动议题跨圈扩散</span>
+        </div>
+        <div id="hotSearchList" class="hot-list"></div>
+      </section>
+
+      <section id="sentiment" class="section shell">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">CASE FILE 04</p>
+            <h2>情绪与关键词</h2>
+          </div>
+          <span class="section-note">中性转述占主导，负面讨论仍显著</span>
+        </div>
+        <div class="analysis-grid three">
+          <article class="panel chart-panel">
+            <div class="panel-head">
+              <span>情绪结构</span>
+              <i data-lucide="gauge"></i>
+            </div>
+            <div id="sentimentChart" class="chart"></div>
+          </article>
+          <article class="panel chart-panel">
+            <div class="panel-head">
+              <span>高频词</span>
+              <i data-lucide="hash"></i>
+            </div>
+            <div id="keywordBoard" class="keyword-board"></div>
+          </article>
+          <article class="panel chart-panel">
+            <div class="panel-head">
+              <span>地区分布</span>
+              <i data-lucide="map-pinned"></i>
+            </div>
+            <div id="regionChart" class="chart"></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="media" class="section shell">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">CASE FILE 05</p>
+            <h2>媒体结构</h2>
+          </div>
+          <span class="section-note">微博、网媒与短视频共同构成主要传播面</span>
+        </div>
+        <div class="analysis-grid two media-layout">
+          <article class="panel chart-panel">
+            <div class="panel-head">
+              <span>媒体类型占比</span>
+              <i data-lucide="pie-chart"></i>
+            </div>
+            <div id="mediaChart" class="chart large"></div>
+          </article>
+          <article class="panel chart-panel">
+            <div class="panel-head">
+              <span>来源站点排行</span>
+              <i data-lucide="bar-chart-3"></i>
+            </div>
+            <div id="sourceChart" class="chart large"></div>
+          </article>
+        </div>
+        <div id="mediaSummary" class="media-summary"></div>
+        <div class="rank-panel">
+          <div class="tabbar" role="tablist" aria-label="媒体级别">
+            <button class="rank-tab active" type="button" data-rank="central">
+              <i data-lucide="landmark"></i><span>中央媒体</span>
+            </button>
+            <button class="rank-tab" type="button" data-rank="province">
+              <i data-lucide="building-2"></i><span>省级媒体</span>
+            </button>
+            <button class="rank-tab" type="button" data-rank="local">
+              <i data-lucide="map"></i><span>地方媒体</span>
+            </button>
+          </div>
+          <div id="mediaRankList" class="rank-list"></div>
+        </div>
+      </section>
+
+      <section id="spread" class="section shell spread-section">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">CASE FILE 06</p>
+            <h2>微博传播链路</h2>
+          </div>
+          <span class="section-note">多层级扩散使议题持续外溢</span>
+        </div>
+        <div class="spread-grid">
+          <article class="panel spread-stat">
+            <span>最大信息层级</span>
+            <strong id="spreadLayer">11</strong>
+          </article>
+          <article class="panel spread-stat">
+            <span>总转发人数</span>
+            <strong id="spreadReposts">18,866</strong>
+          </article>
+          <article class="panel spread-stat">
+            <span>覆盖微博用户</span>
+            <strong id="spreadReach">4,412,899,319</strong>
+          </article>
+        </div>
+        <div class="analysis-grid two">
+          <article class="panel chart-panel">
+            <div class="panel-head">
+              <span>层级占比</span>
+              <i data-lucide="git-branch"></i>
+            </div>
+            <div id="layerChart" class="chart"></div>
+          </article>
+          <article class="panel influencer-panel">
+            <div class="panel-head">
+              <span>关键转发节点</span>
+              <i data-lucide="users-round"></i>
+            </div>
+            <div id="influencerList" class="influencer-list"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section shell">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">CASE FILE 07</p>
+            <h2>观点复盘</h2>
+          </div>
+          <span class="section-note">评论区呈现出辩护、问责与治理三类表达</span>
+        </div>
+        <div class="analysis-grid two">
+          <article class="panel chart-panel">
+            <div class="panel-head">
+              <span>代表性观点热度</span>
+              <i data-lucide="message-circle-more"></i>
+            </div>
+            <div id="topicsChart" class="chart large"></div>
+          </article>
+          <article class="panel comments-panel">
+            <div class="tabbar compact" role="tablist" aria-label="评论类型">
+              <button class="comment-tab active" type="button" data-comment="positive">
+                <i data-lucide="thumbs-up"></i><span>正向</span>
+              </button>
+              <button class="comment-tab" type="button" data-comment="neutral">
+                <i data-lucide="circle-dot"></i><span>中性</span>
+              </button>
+              <button class="comment-tab" type="button" data-comment="negative">
+                <i data-lucide="shield-alert"></i><span>争议</span>
+              </button>
+            </div>
+            <div id="commentList" class="comment-list"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="conclusion shell">
+        <p class="section-kicker">CONCLUSION</p>
+        <h2>复盘要点</h2>
+        <div id="conclusionList" class="conclusion-list"></div>
+      </section>
+    </main>
+
+    <footer class="footer shell">
+      <span>村支书耳环事件舆情分析报告</span>
+      <span>Data period: 2026.05.20 - 2026.06.20</span>
+    </footer>
+
+    <script src="vendor/echarts.min.js"></script>
+    <script src="vendor/lucide.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
